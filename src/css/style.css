@@ -30,7 +30,7 @@
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 40px;
 }
 
 #calculator h2 {
@@ -87,6 +87,10 @@
     transition: all .15s ease-in-out;
 }
 
+.btn-link {
+    text-decoration: none;
+}
+
 .radio-inputs .radio input:checked+.name {
     background-color: #355fca;
     color: #fff;
@@ -101,6 +105,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    text-decoration: none;
+    color: #1b3884;;
 }
 
 .input-field label {
@@ -176,6 +182,7 @@
     will-change: transform;
     transform: translateY(-4px);
     transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+    text-decoration: none;
 }
 
 #calculate:hover {
@@ -206,7 +213,7 @@
     outline: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
 
     * {
         font-family: 'Poppins', sans-serif;
@@ -233,7 +240,6 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
-        scale: 0.8;
     }
 
     #calculator h2 {
